@@ -8,7 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" href="./assets/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" href="./assets/favicon-32x32.png" />
     <title>Test</title>
 </head>
 
@@ -28,51 +28,63 @@
                     fill="#989898" />
             </svg>
 
-            <input type="text" id="searchInput" name="searchInput" placeholder="Запрос пользователя">
+            <input type="text" id="searchInput" name="searchInput" value="Запрос пользователя">
             <input type="submit" id="searchButton" name="searchButton" value="Найти">
         </form>
         <button class="search-closing-button">Закрыть</button>
     </div>
 
     <div class="results-wrapper">
-        <h2>Результаты по запросу</h2>
-        <span>Показаны результаты для “Запрос пользозвателя”. Вы искали “Зопрос пользователя”.</span>
+        <div class="results-header">
+            <h2>Результаты по запросу</h2>
+            <p>Показаны результаты для <span class="results-shown">“Запрос пользозвателя”</span>. Вы искали <span
+                    class="results-searched">“<span class="results-replaced">Зопрос</span> пользователя”</span>.</p>
+        </div>
         <div class="categories-slider">
             <div class="categories-slider-item">
                 <div class="categories-slider-item_image"></div>
-                <H3>Название категории</H3>
-                <p>134 товара</p>
+                <div class="categories-slider-item-description">
+                    <H3>Название категории</H3>
+                    <p>134 товара</p>
+                </div>
             </div>
-
             <div class="categories-slider-item">
                 <div class="categories-slider-item_image"></div>
-                <H3>Название категории</H3>
-                <p>134 товара</p>
+                <div class="categories-slider-item-description">
+                    <H3>Название категории</H3>
+                    <p>134 товара</p>
+                </div>
             </div>
-
             <div class="categories-slider-item">
                 <div class="categories-slider-item_image"></div>
-                <H3>Название категории</H3>
-                <p>134 товара</p>
+                <div class="categories-slider-item-description">
+                    <H3>Название категории</H3>
+                    <p>134 товара</p>
+                </div>
             </div>
-
             <div class="categories-slider-item">
                 <div class="categories-slider-item_image"></div>
-                <H3>Название категории</H3>
-                <p>134 товара</p>
+                <div class="categories-slider-item-description">
+                    <H3>Название категории</H3>
+                    <p>134 товара</p>
+                </div>
             </div>
-
             <div class="categories-slider-item">
                 <div class="categories-slider-item_image"></div>
-                <H3>Название категории</H3>
-                <p>134 товара</p>
+                <div class="categories-slider-item-description">
+                    <H3>Название категории</H3>
+                    <p>134 товара</p>
+                </div>
             </div>
-
             <div class="categories-slider-item">
                 <div class="categories-slider-item_image"></div>
-                <H3>Название категории</H3>
-                <p>134 товара</p>
+                <div class="categories-slider-item-description">
+                    <H3>Название категории</H3>
+                    <p>134 товара</p>
+                </div>
             </div>
+      
+
         </div>
 
         <aside class="results-left-side">
@@ -217,8 +229,10 @@
                         Наименование товара, которое не более 2 строк
                     </div>
                     <div class="goods-item-price-wrapper">
-                        <span class="goods-item-price-current">ХХ ХХХ , <span class="goods-item-price-currency">$</span> </span>
-                        <span class="goods-item-price-previous">ХХ ХХХ <span class="goods-item-price-currency">$</span></span>
+                        <span class="goods-item-price-current">ХХ ХХХ , <span class="goods-item-price-currency">$</span>
+                        </span>
+                        <span class="goods-item-price-previous">ХХ ХХХ <span
+                                class="goods-item-price-currency">$</span></span>
                     </div>
                     <button class="goods-item-button">Кнопка</button>
                 </div>
