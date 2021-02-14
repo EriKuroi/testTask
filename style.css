@@ -411,7 +411,6 @@ button {
 
 .categories-found {
     margin-bottom: 36px;
-
 }
 
 .categories-found h5 {
@@ -447,6 +446,7 @@ button {
     box-sizing: border-box;
     border-radius: 3px;
     font-size: 14px;
+    margin-bottom: 14px;
 }
 
 .price-range-min-max label,
@@ -454,33 +454,49 @@ button {
     opacity: 0.5;
     margin: 0 5px 0 5px;
 }
+.price-range-slider{
+    position: relative;
+}
 
-.price-range-wrapper input[type="range"] {
+.price-range-slider input[type="range"] {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
     -webkit-appearance: none;
-
     width: 290px;
     height: 4px;
-
     background: #000000;
     border-radius: 30px;
 }
 
-.price-range-wrapper input[type="range"] ::-webkit-slider-thumb {
+::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
+    pointer-events: all;
+    position: relative;
+
+    z-index: 1;
+    width: 14px;
+    height: 14px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+}
+
+::-moz-range-thumb {
+    pointer-events: all;
+    position: relative;
+
+    z-index: 1;
     width: 14px;
     height: 14px;
     background: #FFFFFF;
     border: 2px solid #000000;
     box-sizing: border-box;
-
-    cursor: pointer;
-}
-
-.price-range-wrapper input[type="range"]::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    background: #4CAF50;
+    border-radius: 30px;
     cursor: pointer;
 }
 
@@ -564,6 +580,7 @@ main {
 
 .sort-by-wrapper span {
     margin-right: 14px;
+    cursor: pointer;
 }
 
 .sort-by-selected {

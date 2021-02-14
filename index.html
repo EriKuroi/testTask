@@ -180,8 +180,29 @@
                         <input type="number" name="max-price" id="max-price" value="100000">
                         <span class="price-range_currency">P</span>
                     </div>
-                    <input type="range" name="price-range" id="price-range" class="range-control" min="1000"
-                        max="1000000">
+                    <section class="price-range-slider">
+                        <input 
+                        type="range" 
+                        name="price-range-1" 
+                        id="price-range-1" 
+                        class="range-control" 
+                        min="1000"
+                        max="1000000"
+                        step="500"
+                        value="1000"
+                        >
+                        <input 
+                        type="range" 
+                        name="price-range-2" 
+                        id="price-range-2" 
+                        class="range-control" 
+                        min="1000"
+                        max="1000000"
+                        step="500"
+                        value="1000000"
+                        >
+                    </section>
+
                 </div>
 
                 <div class="brands-wrapper">
@@ -386,5 +407,5 @@
             </main>
         </div>
     </div>
-
+    <script src="./script.js"></script>
 </body>
