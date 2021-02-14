@@ -288,7 +288,7 @@ button {
 
 .results-header {
     display: flex;
-    align-items: baseline;
+    align-items: center;
 }
 
 .results-header h2 {
@@ -327,11 +327,22 @@ button {
 
 .categories-slider {
     position: relative;
-    margin: 30px 20px;    
+    margin: 30px 20px;
     flex-wrap: nowrap;
     overflow-x: auto;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+
+
 }
-.categories-slider ::after{
+
+.categories-slider ::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -344,11 +355,10 @@ button {
 }
 
 
-.categories-slider ::-webkit-scrollbar {
-    display: none;
+.results-wrapper ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
 }
-
-
 
 .categories-slider-item {
 
@@ -370,4 +380,200 @@ button {
     padding-left: 10px;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.categories-slider-item h3 {
+    width: 141px;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.categories-slider-item p {
+    font-size: 14px;
+    line-height: 19px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8B8B8B;
+
+}
+
+/*-----------results main part--------------*/
+
+
+
+
+.results-main-part-wrapper {
+    /* grid-template-columns: 40px 290px 42px 260px 44px 260px 43px 260px 40px; */
+    display: flex;
+    padding-left: 40px;
+}
+
+/*-----------results main part aside--------------*/
+
+.categories-found {
+    margin-bottom: 36px;
+
+}
+
+.categories-found h5 {
+    margin-bottom: 11px;
+}
+
+.categories-found-item,
+.categories-found-more {
+    color: #5375B7;
+    margin-bottom: 10px;
+
+}
+
+.categories-found-item span {
+    color: #8B8B8B;
+}
+
+.price-range-wrapper {
+    margin-bottom: 27px;
+
+}
+
+.price-range-wrapper h3 {
+    font-weight: bold;
+    margin-bottom: 16px;
+
+}
+
+.price-range-min-max input {
+    width: 110px;
+    height: 40px;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.price-range-min-max label,
+.price-range-min-max span {
+    opacity: 0.5;
+    margin: 0 5px 0 5px;
+}
+
+.price-range-wrapper input[type="range"] {
+    -webkit-appearance: none;
+
+    width: 290px;
+    height: 4px;
+
+    background: #000000;
+    border-radius: 30px;
+}
+
+.price-range-wrapper input[type="range"] ::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+
+    cursor: pointer;
+}
+
+.price-range-wrapper input[type="range"]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.brands-wrapper {
+    font-family: Open Sans;
+    position: relative;
+
+
+}
+
+.brands-wrapper h3 {
+    font-weight: bold;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+
+.brands-clean {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: Arial;
+    font-size: 10px;
+    line-height: 11px;
+    text-decoration-line: underline;
+    color: #333333;
+    opacity: 0.5;
+}
+
+.brands-item {
+    display: flex;
+    align-items: center;
+}
+
+.brands-item input {
+    width: 15px;
+    height: 15px;
+
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.brands-item label {
+    margin-left: 4px;
+
+}
+
+.brands-item span {
+    margin-left: 4px;
+    opacity: 0.7;
+}
+
+/*-----------results main part main--------------*/
+main {
+    padding-left: 40px;
+    width: 867px;
+}
+
+.sorting-top-line,
+.sort-by-wrapper {
+    display: flex;
+}
+
+.sorting-top-line {
+    justify-content: space-between;
+    font-family: Open Sans;
+    line-height: 19px;
+}
+
+.sort-by-wrapper h4 {
+    margin-right: 10px;
+
+}
+
+.sort-by-wrapper span {
+    margin-right: 14px;
+}
+.sort-by-selected {
+    position: relative;
+}
+.sort-by-wrapper ::before {
+    content: '';
+    position: absolute;
+    width: 95px;
+    height: 1px;
+    background-color: #F1BD45;
+    top: 16px;
+    left: 0;
+    z-index: -1;
+}
+
+.show-per-page-wrapper span {
+    margin-right: 5px;
+
 }
