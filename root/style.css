@@ -137,7 +137,6 @@ table {
 html {
     width: 100%;
     height: 100%;
-
 }
 
 body {
@@ -148,42 +147,47 @@ body {
     font-family: Arial;
     font-size: 14px;
     line-height: 16px;
+}
 
+h1 {
+    line-height: 114%;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 32px;
+}
+
+h3 {
+    line-height: 19px;
+}
+
+h4 {
+    font-weight: bold;
 }
 
 /*-----------header--------------*/
 
 header {
-    width:100%;
+    width: 100%;
     height: 100px;
     background: #000000;
-
+    color: #FFFFFF;
     display: flex;
     align-items: center;
-
 }
 
 header h1 {
-
     margin-left: 43px;
-
-    font-family: Arial;
-    font-size: 14px;
-    line-height: 16px;
     font-weight: bold;
-    /* identical to box height, or 114% */
-
-    color: #FFFFFF;
 }
 
 /*-----------search--------------*/
 button {
     cursor: pointer;
-
 }
 
 .search-wrapper {
-    /* padding: 32px 0 0 30px; */
     position: relative;
     display: flex;
     align-items: center;
@@ -194,8 +198,6 @@ button {
 }
 
 .search-wrapper input[type="text"]::value {
-    position: absolute;
-    color: #000000;
     padding-left: 56px;
     top: 45px;
 }
@@ -211,9 +213,7 @@ button {
     border: 1px solid #C7C7C7;
     box-sizing: border-box;
     border-radius: 5px 0px 0px 5px;
-
     padding-left: 56px;
-
 }
 
 .search-wrapper ::before {
@@ -228,14 +228,10 @@ button {
     z-index: 1;
 }
 
-
-
-
 .search-wrapper ::after {
     position: absolute;
     content: "";
     display: block;
-
     width: 1px;
     height: 16px;
     background-color: #000000;
@@ -254,7 +250,6 @@ button {
     left: 236px;
     top: 48px;
     cursor: pointer;
-
 }
 
 .search-wrapper input[type="submit"] {
@@ -263,12 +258,10 @@ button {
     height: 40px;
     left: 967px;
     font-weight: bold;
-
     background: #F1BD45;
     border-radius: 0px 3px 3px 0px;
     border: none;
     cursor: pointer;
-
 }
 
 .search-closing-button {
@@ -279,7 +272,6 @@ button {
     box-sizing: border-box;
     border-radius: 3px;
     font-weight: bold;
-
 }
 
 
@@ -291,8 +283,6 @@ button {
 }
 
 .results-header h2 {
-    font-size: 28px;
-    line-height: 32px;
     margin-left: 40px;
 }
 
@@ -304,9 +294,6 @@ button {
     line-height: 19px;
     /* identical to box height */
     margin-left: 19px;
-
-
-
     color: #8B8B8B;
 }
 
@@ -315,8 +302,8 @@ button {
 }
 
 
-
 /*-----------categories--------------*/
+
 
 .categories-slider,
 .categories-slider-item,
@@ -337,8 +324,6 @@ button {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-
-
 }
 
 .categories-slider ::after {
@@ -348,7 +333,6 @@ button {
     height: 100%;
     top: 0;
     right: 0;
-
     -webkit-box-shadow: inset -150px -13px 50px -90px #FFFFFF;
     box-shadow: inset -150px -13px 50px -90px #FFFFFF;
 }
@@ -360,7 +344,6 @@ button {
 }
 
 .categories-slider-item {
-
     padding: 0 20px 0 20px;
     border-right: solid 1px #B9B9B9;
 }
@@ -383,22 +366,16 @@ button {
 
 .categories-slider-item h3 {
     width: 141px;
-    font-size: 14px;
-    line-height: 19px;
 }
 
 .categories-slider-item p {
     font-size: 14px;
-    line-height: 19px;
     font-size: 12px;
     line-height: 16px;
     color: #8B8B8B;
-
 }
 
 /*-----------results main part--------------*/
-
-
 
 
 .results-main-part-wrapper {
@@ -421,7 +398,6 @@ button {
 .categories-found-more {
     color: #5375B7;
     margin-bottom: 10px;
-
 }
 
 .categories-found-item span {
@@ -430,13 +406,10 @@ button {
 
 .price-range-wrapper {
     margin-bottom: 27px;
-
 }
 
-.price-range-wrapper h3 {
-    font-weight: bold;
+.price-range-wrapper h4 {
     margin-bottom: 16px;
-
 }
 
 .price-range-min-max input {
@@ -454,7 +427,8 @@ button {
     opacity: 0.5;
     margin: 0 5px 0 5px;
 }
-.price-range-slider{
+
+.price-range-slider {
     position: relative;
 }
 
@@ -474,7 +448,6 @@ button {
     appearance: none;
     pointer-events: all;
     position: relative;
-
     z-index: 1;
     width: 14px;
     height: 14px;
@@ -483,13 +456,11 @@ button {
     border-radius: 30px;
     box-sizing: border-box;
     cursor: pointer;
-    
 }
 
 ::-moz-range-thumb {
     pointer-events: all;
     position: relative;
-
     z-index: 1;
     width: 14px;
     height: 14px;
@@ -503,13 +474,10 @@ button {
 .brands-wrapper {
     font-family: Open Sans;
     position: relative;
-
-
 }
 
 .brands-wrapper h3 {
     font-weight: bold;
-    line-height: 19px;
     margin-bottom: 10px;
 }
 
@@ -533,7 +501,6 @@ button {
 .brands-item input {
     width: 15px;
     height: 15px;
-
     border: 1px solid #DEDEDE;
     box-sizing: border-box;
     border-radius: 3px;
@@ -541,7 +508,6 @@ button {
 
 .brands-item label {
     margin-left: 4px;
-
 }
 
 .brands-item span {
@@ -550,6 +516,7 @@ button {
 }
 
 /*-----------results main part main--------------*/
+
 main {
     margin-left: 40px;
     width: 915px;
@@ -563,7 +530,6 @@ main {
 .sort-by-wrapper {
     display: flex;
     color: #5375B7;
-
 }
 
 .sorting-top-line {
@@ -572,10 +538,9 @@ main {
     line-height: 19px;
 }
 
-.sort-by-wrapper h4 {
+.sort-by-wrapper h5 {
     margin-right: 10px;
     color: #000000;
-
 }
 
 .sort-by-wrapper span {
@@ -586,7 +551,6 @@ main {
 .sort-by-selected {
     position: relative;
     color: #333333;
-
 }
 
 .sort-by-wrapper ::before {
@@ -606,7 +570,6 @@ main {
 
 .show-per-page-wrapper span {
     margin-right: 5px;
-
 }
 
 .show-per-page-wrapper select {
@@ -626,31 +589,27 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100px;
     height: 30px;
     background: #FFF3D8;
     border-radius: 3px;
-
     font-family: Roboto;
-    color: #000000;
-
     margin-right: 10px;
-
 }
-.goods-wrapper{
+
+.goods-wrapper {
     display: flex;
     flex-wrap: wrap;
 }
+
 .goods-item {
     width: 260px;
     margin: 0 40px 40px 0;
 }
 
 .goods-item-image {
-    /* width: 260px; */
+    width: 260px;
     height: 260px;
-
     background: #C4C4C4;
     background-image: url(./assets/Rectangle\ 4.png);
     border-radius: 3px;
@@ -691,13 +650,13 @@ main {
     background: #F1BD45;
     border-radius: 3px;
     border: none;
-
     font-weight: bold;
     font-size: 14px;
 }
 
 .pages-wrapper {
     display: flex;
+    margin-bottom: 53px;
 }
 
 .pages-wrapper p {
@@ -707,16 +666,19 @@ main {
     margin-right: 30px;
 }
 
-.pages-range{
+.pages-range {
     margin-right: 17px;
 }
-.pages-num{
+
+.pages-num {
     cursor: pointer;
     opacity: 0.5;
 }
-.pages-active{
+
+.pages-active {
     opacity: 1;
 }
-.button-next{
+
+.button-next {
     cursor: pointer;
 }
