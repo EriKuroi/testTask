@@ -141,11 +141,8 @@ html {
 }
 
 body {
-    /* width: 100%;
-    height: 100%; */
-    position: relative;
-    width: 1280px;
-    height: 1829px;
+    width: 100%;
+    height: 100%;
     background: #FFFFFF;
     color: #000000;
     font-family: Arial;
@@ -157,7 +154,7 @@ body {
 /*-----------header--------------*/
 
 header {
-    width: 1280px;
+    width:100%;
     height: 100px;
     background: #000000;
 
@@ -270,6 +267,8 @@ button {
     background: #F1BD45;
     border-radius: 0px 3px 3px 0px;
     border: none;
+    cursor: pointer;
+
 }
 
 .search-closing-button {
@@ -536,13 +535,19 @@ button {
 
 /*-----------results main part main--------------*/
 main {
-    padding-left: 40px;
-    width: 867px;
+    margin-left: 40px;
+    width: 915px;
+}
+
+.sorting-wrapper {
+    margin-bottom: 20px;
 }
 
 .sorting-top-line,
 .sort-by-wrapper {
     display: flex;
+    color: #5375B7;
+
 }
 
 .sorting-top-line {
@@ -553,15 +558,20 @@ main {
 
 .sort-by-wrapper h4 {
     margin-right: 10px;
+    color: #000000;
 
 }
 
 .sort-by-wrapper span {
     margin-right: 14px;
 }
+
 .sort-by-selected {
     position: relative;
+    color: #333333;
+
 }
+
 .sort-by-wrapper ::before {
     content: '';
     position: absolute;
@@ -573,7 +583,123 @@ main {
     z-index: -1;
 }
 
+.show-per-page-wrapper {
+    color: #000000;
+}
+
 .show-per-page-wrapper span {
     margin-right: 5px;
 
+}
+
+.show-per-page-wrapper select {
+    width: 50px;
+    height: 33.33px;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-right: 40px;
+}
+
+.sorting-down-line {
+    display: flex;
+}
+
+.clarification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 30px;
+    background: #FFF3D8;
+    border-radius: 3px;
+
+    font-family: Roboto;
+    color: #000000;
+
+    margin-right: 10px;
+
+}
+.goods-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.goods-item {
+    width: 260px;
+    margin: 0 40px 40px 0;
+}
+
+.goods-item-image {
+    /* width: 260px; */
+    height: 260px;
+
+    background: #C4C4C4;
+    background-image: url(./assets/Rectangle\ 4.png);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.goods-item-name {
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    margin-bottom: 18px;
+}
+
+.goods-item-price-wrapper {
+    font-family: Open Sans;
+    line-height: 114%;
+    margin-bottom: 15px;
+}
+
+.goods-item-price-current,
+.goods-item-price-currency {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.goods-item-price-currency {
+    margin-right: 16px;
+}
+
+.goods-item-price-previous {
+    font-size: 14px;
+    text-decoration-line: line-through;
+    color: #A9A9A9;
+}
+
+.goods-item-button {
+    width: 260px;
+    height: 40px;
+    background: #F1BD45;
+    border-radius: 3px;
+    border: none;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pages-wrapper {
+    display: flex;
+}
+
+.pages-wrapper p {
+    font-size: 16px;
+    line-height: 18px;
+    opacity: 0.5;
+    margin-right: 30px;
+}
+
+.pages-range{
+    margin-right: 17px;
+}
+.pages-num{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.pages-active{
+    opacity: 1;
+}
+.button-next{
+    cursor: pointer;
 }
